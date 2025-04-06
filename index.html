@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Skin Recommender</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Game Skin Recommender</h1>
+        <div class="form-container">
+            <form id="preferenceForm">
+                <div class="form-group">
+                    <label for="game">Select Game:</label>
+                    <select id="game" name="game" required>
+                        <option value="">Select a game</option>
+                        <option value="valorant">Valorant</option>
+                        <option value="csgo">CS:GO</option>
+                        <option value="pubg">PUBG</option>
+                        <option value="fortnite">Fortnite</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="playstyle">Your Playstyle:</label>
+                    <select id="playstyle" name="playstyle" required>
+                        <option value="">Select your playstyle</option>
+                        <option value="sniper">Sniper</option>
+                        <option value="rusher">Rusher</option>
+                        <option value="clutcher">Clutcher</option>
+                        <option value="support">Support</option>
+                        <option value="all-rounder">All-Rounder</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="preferences">Additional Preferences:</label>
+                    <textarea id="preferences" name="preferences" placeholder="Any specific preferences for skins or costumes? (e.g., color, theme, rarity)"></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Get Recommendations</button>
+            </form>
+        </div>
+
+        <div id="recommendations" class="recommendations-container">
+            <!-- Recommendations will be displayed here -->
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
